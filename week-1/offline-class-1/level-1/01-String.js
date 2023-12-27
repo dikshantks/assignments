@@ -17,21 +17,21 @@ function findIndexOf(str, target) {
   console.log("Original String:", str);
   console.log("Index:", str.indexOf(target));
 }
-findIndexOf("Hello World", "World");
+findIndexOf("Hello World", "rld");
 
 // lastIndexOf
 function findLastIndexOf(str, target) {
   console.log("Original String:", str);
   console.log("Index:", str.lastIndexOf(target));
 }
-findLastIndexOf("Hello World World", "World");
+findLastIndexOf("Hello WorldWorld", "H");
 
 // slice
 function getSlice(str, start, end) {
   console.log("Original String:", str);
   console.log("After slice:", str.slice(start, end));
 }
-getSlice("Hello World", 0, 5);
+getSlice("Hello World", 0, 54);
 
 // substring
 function getSubstring(str, start, end) {
@@ -52,14 +52,16 @@ function splitString(str, separator) {
   console.log("Original String:", str);
   console.log("After split:", str.split(separator));
 }
-splitString("Hello World", " ");
+splitString("Hello World", "o");
 
 // trim
 function trimString(str) {
   console.log("Original String:", str);
   console.log("After trim:", str.trim());
 }
-trimString(" Hello World ");
+trimString(
+  "                                                  Hello World                                       "
+);
 
 // toUpperCase
 function toUpper(str) {
